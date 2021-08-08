@@ -20,7 +20,7 @@ namespace BooksApi.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Book>> GetBooks()
         {
-            if(Books is not null)
+            if (Books is not null)
             {
                 return Books;
             }
@@ -48,7 +48,7 @@ namespace BooksApi.Controllers
         {
             foreach (var book in Books)
             {
-                if(id == book.Id)
+                if (id == book.Id)
                 {
                     book.Id = bookModified.Id;
                     book.AuthorName = bookModified.AuthorName;
@@ -79,7 +79,7 @@ namespace BooksApi.Controllers
         {
             foreach (var book in Books)
             {
-                if(id == book.Id)
+                if (id == book.Id)
                 {
                     Books.Remove(book);
                     return NoContent();
