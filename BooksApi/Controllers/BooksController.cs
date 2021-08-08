@@ -55,7 +55,7 @@ namespace BooksApi.Controllers
                     book.AuthorName = bookModified.AuthorName;
                     book.Title = bookModified.Title;
                     book.Price = bookModified.Price;
-                    return Created("A book has been updated", book);
+                    return StatusCode(200, book);
                 }
             }
             return NotFound();
