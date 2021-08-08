@@ -86,7 +86,7 @@ namespace BooksApi.Controllers
                     return NoContent();
                 }
             }
-            return BadRequest();
+            return NotFound();
         }
     }
 }
