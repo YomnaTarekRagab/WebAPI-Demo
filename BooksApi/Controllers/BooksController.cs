@@ -12,7 +12,8 @@ namespace BooksApi.Controllers
     [Route("[controller]")]
     public class BooksController : ControllerBase
     {
-        public List <Book> Books = new List<Book>(){
+        public List <Book> Books = new List<Book>()
+        {
             new Book{ Id = 1, Title = "David Copperfield", AuthorName = "Charles Dickens", Price = 12 },
             new Book{ Id = 2, Title = "The Tale Of Two Cities", AuthorName = "Charles Dickens", Price = 20 }
         };
