@@ -6,7 +6,6 @@ using Microsoft.AspNetCore.Mvc;
 using BooksApi.Models;
 using Microsoft.AspNetCore.Http;
 
-
 namespace BooksApi.Controllers
 {
     [ApiController]
