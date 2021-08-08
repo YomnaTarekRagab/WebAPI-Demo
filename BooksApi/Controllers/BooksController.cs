@@ -42,6 +42,7 @@ namespace BooksApi.Controllers
             }
             return NotFound();
         }
+        
         [HttpPut("{id}")]
         public ActionResult<Book> PutBook(int id, Book bookModified)
         {
@@ -57,8 +58,8 @@ namespace BooksApi.Controllers
                 }
             }
             return NotFound();
-
         }
+        
         [HttpPost]
         public ActionResult<Book> PostBook(Book newBook)
         {
