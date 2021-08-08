@@ -36,7 +36,7 @@ namespace BooksApi.Controllers
         {
             foreach (var book in Books)
             {
-                if(id == book.Id )
+                if(id == book.Id)
                 {
                     return book;
                 }
